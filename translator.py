@@ -5,7 +5,7 @@ from ibm_watson import LanguageTranslatorV3
 	class Translation:
 	    """ Main Class """
 	    def __init__(self):
-	        """ input(english) -> print(french) """
+	        """ input(english) >>> print(french) """
 	        authenticator = IAMAuthenticator('yh3FZLY_WgCVgtIDnS0G6e1fG-OJK0d08DtZ4utRQ0vr')
 	        self.language_translator = LanguageTranslatorV3(
 	            version='2022-07-22',
@@ -16,7 +16,7 @@ from ibm_watson import LanguageTranslatorV3
 	
 
 	    def englishtofrench(self, english_input):
-	        """ input(english) -> return(french) """
+	        """ input(english) >>> return(french) """
 	        translation_result = self.language_translator.translate(
 	            text=english_input,
 	            model_id='en-fr').get_result()
@@ -25,7 +25,7 @@ from ibm_watson import LanguageTranslatorV3
 	
 
 	    def englishtogerman(self, english_input):
-	        """ input(english) -> return(german) """
+	        """ input(english) >>> return(german) """
 	        if english_input == "" or english_input is None:
 	            return ""
 	        translation_result = self.language_translator.translate(

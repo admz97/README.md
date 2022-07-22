@@ -22,6 +22,6 @@ return french_text
 
 if __name__ == '__main__'
   english_text = "HelLo, My name is Ahmed
-  french_text = ahmed_translation().engLishtofrench(engLish_text)
+  french_text = ahmed_translation().engLishtofrench(english_text)
   print(french_text)
 

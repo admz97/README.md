@@ -23,6 +23,18 @@ from ibm_watson import LanguageTranslatorV3
 	        french_output = translation_result['translations'][0]['translation']
 	        return french_output
 	
+	
+	def frenchtoenglish(self, french_input):
+	        """ input(frensh) >>> return(english) """
+	        translation_result = self.language_translator.translate(
+	            text=french_input,
+	            model_id='fr-en').get_result()
+	        english_output = translation_result['translations'][0]['translation']
+	        return english_output
+	
+	
+	
+	
 
 	    def englishtogerman(self, english_input):
 	        """ input(english) >>> return(german) """

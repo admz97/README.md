@@ -8,7 +8,7 @@ from ibm_watson import LanguageTranslatorV3
 	        """ input(english) -> print(french) """
 	        authenticator = IAMAuthenticator('yh3FZLY_WgCVgtIDnS0G6e1fG-OJK0d08DtZ4utRQ0vr')
 	        self.language_translator = LanguageTranslatorV3(
-	            version='2021-03-16',
+	            version='2022-07-22',
 	            authenticator=authenticator
 	        )
 	        self.language_translator.set_service_url(

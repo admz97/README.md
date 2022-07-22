@@ -6,13 +6,13 @@ from ibm_watson import LanguageTranslatorV3
 	    """ Main Class """
 	    def __init__(self):
 	        """ input(english) -> print(french) """
-	        authenticator = IAMAuthenticator('JDVKmKj3gLvbwQAVuHJWrvMD4n4YuCmjCLG28740j-dP')
+	        authenticator = IAMAuthenticator('yh3FZLY_WgCVgtIDnS0G6e1fG-OJK0d08DtZ4utRQ0vr)
 	        self.language_translator = LanguageTranslatorV3(
 	            version='2021-03-16',
 	            authenticator=authenticator
 	        )
 	        self.language_translator.set_service_url(
-	            'https://api.us-south.language-translator.watson.cloud.ibm.com/instances/1b2ac512-fc0e-4960-bf35-ffe5380de3a1')
+	            'https://api.au-syd.language-translator.watson.cloud.ibm.com/instances/68838cb3-b18b-4011-8a7e-56d7a2ef6158')
 	
 
 	    def englishtofrench(self, english_input):
@@ -37,7 +37,7 @@ from ibm_watson import LanguageTranslatorV3
 
 	if __name__ == '__main__':
 	    """ This is Main function """
-	    ENGLISH = "Hello, My name is TackHyun Jung"
+	    ENGLISH = "Hello, My name is Ahmed"
 	    german = Translation().englishtogerman(ENGLISH)
 	    print(german)
 

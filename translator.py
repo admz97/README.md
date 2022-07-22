@@ -6,7 +6,7 @@ from ibm_watson import LanguageTranslatorV3
 	    """ Main Class """
 	    def __init__(self):
 	        """ input(english) -> print(french) """
-	        authenticator = IAMAuthenticator('yh3FZLY_WgCVgtIDnS0G6e1fG-OJK0d08DtZ4utRQ0vr)
+	        authenticator = IAMAuthenticator('yh3FZLY_WgCVgtIDnS0G6e1fG-OJK0d08DtZ4utRQ0vr')
 	        self.language_translator = LanguageTranslatorV3(
 	            version='2021-03-16',
 	            authenticator=authenticator
